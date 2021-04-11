@@ -1,4 +1,4 @@
-package codeReview;
+package week2.day2;
 
 import java.io.File;
 import java.io.IOException;
