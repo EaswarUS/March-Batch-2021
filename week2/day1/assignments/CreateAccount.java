@@ -51,6 +51,15 @@ public class CreateAccount {
         Select drop4= new Select(State);
         drop4.selectByValue("TX");
         driver.findElementByXPath("//input[@value='Create Account']").click();
+	 String title = driver.getTitle();
+        System.out.println(title);
+        if (title.contains("Create Account")) {
+        	System.out.println("Home Page is verified");
+			
+		}
+        else {
+        	System.out.println("Home Page is not verified");
+		}	
         
 		
 		
